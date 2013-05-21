@@ -3,3 +3,14 @@ apply plugin: 'groovy'
 task wrapper(type: Wrapper) {
     gradleVersion = '1.6'
 }
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.1.3'
+
+    testCompile 'junit:junit:4.11'
+}
